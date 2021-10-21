@@ -18,3 +18,5 @@ sudo apt install -y python-rosdep python-rosinstall python-rosinstall-generator 
 sudo apt install -y python-rosdep
 sudo rosdep init
 rosdep update
+
+sudo apt install -y ros-melodic-teleop-twist-keyboard
