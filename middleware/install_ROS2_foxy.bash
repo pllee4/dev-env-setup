@@ -19,3 +19,8 @@ sudo apt install -y python3-colcon-common-extensions
 
 echo "source /opt/ros/foxy/setup.bash" >> ~/.bashrc
 source ~/.bashrc
+
+# sudo apt install ros-foxy-navigation2
+# sudo apt install ros-foxy-nav2-bringup
+# sudo apt install ros-foxy-xacro
+# sudo apt install ros-foxy-slam-toolbox
