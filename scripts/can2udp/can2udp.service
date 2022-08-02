@@ -1,0 +1,16 @@
+[Unit]
+Description=can2udp service
+Requires=network-online.target
+After=network-online.target
+StartLimitIntervalSec=0
+
+[Service]
+WorkingDirectory=/opt/pllee4
+Environment="LD_LIBRARY_PATH=/usr/local/lib"
+ExecStartPre=/bin/bash bringup_can.bash
+ExecStart=/bin/bash bringup_can2udp.bash
+Restart=always
+RestartSec=60
+
+[Install]
+WantedBy=multi-user.target
